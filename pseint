@@ -1,0 +1,17 @@
+Algoritmo ValidarDivision
+		Definir dividendo, divisor como Entero
+		
+		Escribir "Ingrese el dividendo: "
+		Leer dividendo
+		
+		Escribir "Ingrese el divisor: "
+		Leer divisor
+		
+		Si divisor <> 0 Entonces
+			Definir resultado como Real
+			resultado = dividendo / divisor
+			Escribir "El resultado de la división es: ", resultado
+		Sino
+			Escribir "LoLa-Mento por 0 no se puede dividir."
+		FinSi
+FinAlgoritmo
