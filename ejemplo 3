@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int getInvertNumber(int numero) {
+    int invertido = 0;
+
+    while (numero != 0) {
+        invertido = invertido * 10 + (numero % 10);
+        numero /= 10;
+    }
+
+    return invertido;
+}
+
+int main() {
+    int numero;
+    printf("Holaaa, en este programa invertiremos el numero que desees porfavor ingresa el numero: ");
+    scanf("%d", &numero);
+
+    int numeroInvertido = getInvertNumber(numero);
+    printf("El numero que ingrsaste invertido seria : %d\n", numeroInvertido);
+
+    return 0;
+}
