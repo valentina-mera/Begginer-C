@@ -1,7 +1,7 @@
 Algoritmo ejercicio2
 	Definir palabra, x Como caracter
 	Definir b Como entero 
-	escribir " escribir un numero"
+	escribir " escribir una palabra para ser invertida"
 	leer palabra
 	b= Longitud(palabra)
 	x= ""
