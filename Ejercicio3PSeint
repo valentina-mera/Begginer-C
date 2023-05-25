@@ -1,6 +1,6 @@
 Algoritmo ejercicio3
 	definir num1, x, i Como Real
-	escribir " escribir un numero "
+	escribir " escribir un numero para ser invertido  "
 	leer num1
 	i= 0 
 	Mientras num1>0 Hacer
