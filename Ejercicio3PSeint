@@ -1,0 +1,12 @@
+Algoritmo ejercicio3
+	definir num1, x, i Como Real
+	escribir " escribir un numero "
+	leer num1
+	i= 0 
+	Mientras num1>0 Hacer
+		x= num1 MOD 10
+		num1= trunc(num1 / 10)
+		i= ( i * 10) + x
+	Fin Mientras
+	Escribir " el numero invertido es ", i 
+FinAlgoritmo
