@@ -1,0 +1,13 @@
+Algoritmo ejercicio2
+	Definir palabra, x Como caracter
+	Definir b Como entero 
+	escribir " escribir un numero"
+	leer palabra
+	b= Longitud(palabra)
+	x= ""
+	Mientras b > 0 Hacer
+		x=x + SubCadena(palabra,b,b)
+		b=b-1
+	Fin Mientras
+escribir "el numero invertido es ", x
+FinAlgoritmo
