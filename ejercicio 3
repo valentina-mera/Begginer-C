@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char *getRevertText(char *txt)
+{
+    int size= strlen(txt);
+    int i;
+    char rev;
+    
+    char *revert_txt= malloc(size); //Memoria dinamica
+    
+    strcpy(revert_txt, txt);
+    
+    //inversion de la cadena
+    for (i=0; i<size/2; i++)
+    {
+        rev= revert_txt[i];
+        revert_txt[i]=revert_txt[size-i-1];
+        revert_txt[size-i-1]=rev;
+    }
+    return revert_txt;
+}
+int main ()
+{
+    char txt[100];
+    
+    printf("Ingrese el texto que desea inrevertir:\n");
+    fgets(txt, 100, stdin);
+    
+    char *revert_txt= getRevertText(txt);
+    
+    printf("El texto inrevertido es: %s", revert_txt);
+    
+    return 0;
+}
